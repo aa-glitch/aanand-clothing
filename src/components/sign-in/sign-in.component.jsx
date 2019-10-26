@@ -31,20 +31,21 @@ class SignIn extends React.Component {
 
         <form onSubmit={this.handleSubmit}>
           <FormInput
-            onChange={this.handleChange}
+            handleChange={this.handleChange}
             name='email'
             type='email'
+            label='email'
             value={this.state.email} required />
           <label>Email</label>
 
           <FormInput
-            onChange={this.handleChange}
+            handleChange={this.handleChange}
             name='password'
             type='password'
+            label='password'
             value={this.state.password} required />
-          <label>Password</label>
-
-          <CustomButton type='submit' value='Submit Form' />
+          
+          <CustomButton type='submit'>Sign in</CustomButton>
 
         </form>
 
